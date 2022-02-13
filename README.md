@@ -1,2 +1,2 @@
 # Quantitative-Economics
-This a repository about the book " An Introduction to R for Quantitative Economics"  by Vikram Dayal
+This is a repository about the book " An Introduction to R for Quantitative Economics"  by Vikram Dayal
