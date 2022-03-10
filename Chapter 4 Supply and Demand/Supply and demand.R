@@ -17,43 +17,89 @@ library(mosaic)
 
 pD <- makeFun(( aD - ( bD * q )) / cD ~ q,
               aD = 125, bD = 6,cD = 8)
+
 pD(20)
 
-plotFun(pD, xlim = range(0, 30), ylim = range(5, 20), A = 1,
-        by = 1, lty = 2, type = "l",  lwd = 1.5, xlab = "Quantity", ylab = "Price", main = "Demand Curve")
+# Plot the first demand function
+
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+      lwd = 1.5, main = "1st Demand Curve",
+      col = "blue", xlab = "Quantity", ylab = "Price")
 
 
-# lty stands for line type and lwd stands for width of the line
+# P.S.: lty stands for line type and lwd stands for width of the line
 
 # Second demand function -> pD = (150 − 6q) / 8
+
 pD2 <- makeFun(( aD - ( bD * q )) / cD ~ q,
               aD = 150, bD = 6,cD = 8)
+
 pD2(20)
 
-plotFun(pD2, xlim = range(0, 30), ylim = range(5, 20),
-        lty = 2, lwd = 1.5, type = "l", xlab = "Quantity", ylab = "Price", main = "Demand Curve")
+# Plot the second demand function
+
+curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+      lwd = 1.5, main = "2nd Demand Curve",
+      col = "red", xlab = "Quantity", ylab = "Price")
 
 # Plot both the demand curves pD and pD2 together
-plotFun(pD, xlim = range(0, 30), ylim = range(5, 20),
-        lty = 2, lwd = 1.7, type = "l", xlab = "Quantity", ylab = "Price", main = "Demand Curve", bty = "L")
-plotFun(pD2, xlim = range(0, 30), ylim = range(5, 20),
-        lwd = 1.7, add = TRUE)
+
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+      lwd = 1.5, main = "1st and 2nd Demand Curves",
+      col = "blue", xlab = "Quantity", ylab = "Price")
+curve(pD2, add = TRUE, lwd = 2, col = "red")
 
 
 # Supply
+
+# Supply function -> pS = (12 + 2q) / 5
+
 pS <- makeFun((aS + (bS * q))/cS~q, aS = 12, bS = 2,
               cS = 5)
 
+curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+      lwd = 1.5, main = "Supply Curve",
+      col = "violet", xlab = "Quantity", ylab = "Price")
+
+
 # Plot the demand and supply curves together
-plotFun(pD, xlim = range(0, 30), ylim = range(5, 20),
-        lty = 2, lwd = 1.7, type = "l", xlab = "Quantity", ylab = "Price", main = "Supply and Demand Curves", bty = "L")
-plotFun(pD2, xlim = range(0, 30), ylim = range(5, 20),
-        lwd = 1.7, add = TRUE)
-plotFun(pS, xlim = range(0, 30), ylim = range(5, 20),
-        add = TRUE)
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+      lwd = 1.5, main = "Supply and Demand Curves",
+      col = "blue", xlab = "Quantity", ylab = "Price")
+curve(pD2, add = TRUE, lwd = 2, col = "red")
+curve(pS, add = TRUE, lwd = 2, col = "violet")
 
-# Equilibrium - At the equilibrium, D = S, or D − S = 0
-q.equil <- findZeros(((aD - (bD * q))/cD) - ((aS + (bS * q))/cS) ~ q, aD = 125, bD = 6, cD = 8, aS = 12, bS = 2, cS = 5)
 
+# Market Equilibrium - At the equilibrium, D = S, or D − S = 0, then:
+
+# ((aD - (bD * q))/cD) - ((aS + (bS * q))/cS))
+
+# Market equilibrium at the initial (before the demand curve shifted) equilibrium quantity
+
+# (125 − 6q)/8 - (12 + 2q) / 5
+
+q.equil_0 <- findZeros(((aD - (bD * q))/cD) - ((aS + (bS * q))/cS) ~ q, aD = 125, bD = 6, cD = 8, aS = 12, bS = 2, cS = 5)
+
+# The initial (before the demand curve shifted) equilibrium quantity
+
+q.equil_0
+
+# The initial (before the demand curve shifted) equilibrium price
+
+pD(q.equil_0)
+
+# Market equilibrium at the final (after the demand curve shifted) equilibrium quantity
+
+# (150 − 6q)/8 - (12 + 2q) / 5
+
+q.equil_1 <- findZeros(((aD - (bD * q))/cD) - ((aS + (bS * q))/cS) ~ q, aD = 150, bD = 6, cD = 8, aS = 12, bS = 2, cS = 5)
+
+# The final (after the demand curve shifted)  equilibrium quantity
+
+q.equil_1
+
+# The final (after the demand curve shifted)  equilibrium price
+
+pD(q.equil_1)
 
 
