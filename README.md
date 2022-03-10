@@ -148,9 +148,7 @@ We will now plot the first inverse demand function:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
 
-<img src="/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/1stDemandCurve.png" alt="My cool logo"/>
-
-![](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/1st Demand Curve.png)
+![First Demand Curve](Chapter 4 Supply and Demand/1stDemandCurve.png)
 
 Assuming a general increase in incomes, each individual would choose to buy more "q" at every price. To express the shift in the demand curve due to the general increase in income, we make and plot a second demand function, given by pD2 = (125 − 6q) / 8, where aD = 150, bD = 6 and cD = 8. The only difference to pD is that aD is now equal to 150.
 
@@ -167,13 +165,13 @@ We will now plot the second inverse demand function:
 
 curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "2nd Demand Curve", col = "red", xlab = "Quantity", ylab = "Price")
 
-![Second Demand Curve](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/2nd%20Demand%20Curve.png)
+![Second Demand Curve](Chapter 4 Supply and Demand/2ndDemandCurve.png)
 
 We can now plot both the demand curves pD and pD2 together:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st and 2nd Demand Curves", col = "blue", xlab = "Quantity", ylab = "Price") curve(pD2, add = TRUE, lwd = 2, col = "red")
 
-![First and Second Demand Curve](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20and%202nd%20Demand%20Curves.png)
+![First and Second Demand Curve](Chapter 4 Supply and Demand/1stand2ndDemandCurves.png)
 
 ### 4. Plotting the supply curve
 
@@ -188,7 +186,7 @@ curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 2,
       lwd = 1.5, main = "Supply Curve",
       col = "violet", xlab = "Quantity", ylab = "Price")
       
-![Supply Curve](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/Supply Curve.png)
+![Supply Curve](Chapter 4 Supply and Demand/SupplyCurve.png)
 
 Finally, we can plot both supply and demand curves together:
 
@@ -198,7 +196,7 @@ curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
 curve(pD2, add = TRUE, lwd = 2, col = "red")
 curve(pS, add = TRUE, lwd = 2, col = "violet")
 
-![Supply and Demand Curves](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/Supply and Demand Curves.png)
+![Supply and Demand Curves](Chapter 4 Supply and Demand/SupplyandDemandCurves.png)
 
 A rightward shift in demand increases equilibrium price and equilibrium quantity.
 Although we can see the equilibrium from the point of intersection of D
