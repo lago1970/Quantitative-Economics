@@ -148,7 +148,7 @@ We will now plot the first inverse demand function:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
 
-<img src="/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20Demand%20Curve.pn" alt="Philadelphia's Magic Gardens. This place was so cool!" title="First Demand Curve" />
+<img src="/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/1stDemandCurve.png" alt="My cool logo"/>
 
 ![](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/1st Demand Curve.png)
 
