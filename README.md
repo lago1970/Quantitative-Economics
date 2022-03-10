@@ -150,7 +150,7 @@ curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = 
 
 <img src="/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20Demand%20Curve.pn" alt="Philadelphia's Magic Gardens. This place was so cool!" title="First Demand Curve" />
 
-![First Demand Curve](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20Demand%20Curve.png)
+![](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 4 Supply and Demand/1st Demand Curve.png)
 
 Assuming a general increase in incomes, each individual would choose to buy more "q" at every price. To express the shift in the demand curve due to the general increase in income, we make and plot a second demand function, given by pD2 = (125 − 6q) / 8, where aD = 150, bD = 6 and cD = 8. The only difference to pD is that aD is now equal to 150.
 
