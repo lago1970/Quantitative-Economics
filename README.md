@@ -28,7 +28,7 @@ Some basic commands in R are displayed:
 
 head(ifri_car_liv)
 
-**brackets** [] - it chooses specific rows and columns;
+**brackets** [ ] - it chooses specific rows and columns;
 
 **str** - it displays the structure of the data.
 
@@ -147,6 +147,8 @@ So, when q = 20, pD = 0.625.
 We will now plot the first inverse demand function:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
+
+<img src="/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20Demand%20Curve.pn" alt="Philadelphia's Magic Gardens. This place was so cool!" title="First Demand Curve" />
 
 ![First Demand Curve](/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter%204%20Supply%20and%20Demand/1st%20Demand%20Curve.png)
 
