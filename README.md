@@ -148,7 +148,7 @@ We will now plot the first inverse demand function:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
 
-![First Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/1stDemandCurve.png)
+![First Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot1.png)
 
 Assuming a general increase in incomes, each individual would choose to buy more "q" at every price. To express the shift in the demand curve due to the general increase in income, we make and plot a second demand function, given by pD2 = (125 − 6q) / 8, where aD = 150, bD = 6 and cD = 8. The only difference to pD is that aD is now equal to 150.
 
@@ -165,13 +165,13 @@ We will now plot the second inverse demand function:
 
 curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "2nd Demand Curve", col = "red", xlab = "Quantity", ylab = "Price")
 
-![Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/2ndDemandCurve.png)
+![Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot2.png)
 
 We can now plot both the demand curves pD and pD2 together:
 
 curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "1st and 2nd Demand Curves", col = "blue", xlab = "Quantity", ylab = "Price") curve(pD2, add = TRUE, lwd = 2, col = "red")
 
-![First and Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/1stand2ndDemandCurves.png)
+![First and Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot3.png)
 
 ### 4. Plotting the supply curve
 
@@ -186,7 +186,7 @@ curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "Supply Curve",
       col = "violet", xlab = "Quantity", ylab = "Price")
       
-![Supply Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/SupplyCurve.png)
+![Supply Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot4.png)
 
 Finally, we can plot both supply and demand curves together:
 
@@ -196,7 +196,7 @@ curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1,
 curve(pD2, add = TRUE, lwd = 2, col = "red")
 curve(pS, add = TRUE, lwd = 2, col = "violet")
 
-![Supply and Demand Curves](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/SupplyandDemandCurves.png)
+![Supply and Demand Curves](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot5.png)
 
 A rightward shift in demand increases equilibrium price and equilibrium quantity.
 Although we can see the equilibrium from the point of intersection of D
@@ -258,7 +258,7 @@ For now, we plot price against quantity in a scatter plot. In order to do that w
 xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
        col = "red", xlab = "Quantity", ylab = "Price")
 
-![Fish Market Data Scatterplot](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
+![Fish Market Data Scatterplot](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot6.png)
       
 Since both supply and demand were changing, we cannot “identify” a supply or demand curve only from the above scatter plot.
 
@@ -268,7 +268,7 @@ Thus, we will plot price against stormy variable (stormy weather, that is if the
 
 xyplot(LogPrice ~ jitter(Stormy), data = Fish, type = c("p","r"), main = "Fish Market Data", sub = "Price versus Stormy Weather")
 
-![Fish Market Data 2]("https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fisher%20market%20data%20price%20x%20stormy.png")
+![Fish Market Data 2](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Rplot7.png)
 
 
 
