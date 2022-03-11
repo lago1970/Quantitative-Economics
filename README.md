@@ -253,15 +253,25 @@ str(Fish)
 
 Notice that both price and quantity variables are linearized. Later, we will deal with this topic.
 
-For now, we plot price against quantity in a scatter plot. In order to plot price
-against quantity we use a function or command that is in the Mosaic package, namely **xyplot**:
+For now, we plot price against quantity in a scatter plot. In order to do that we use a function or command that is in the Mosaic package, namely **xyplot**:
 
 xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
        col = "red", xlab = "Quantity", ylab = "Price")
 
- ![Fish Market Data Scatterplot](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
+![Fish Market Data Scatterplot](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
       
-       
+Since both supply and demand were changing, we cannot “identify” a supply or demand curve only from the above scatter plot.
+
+However, Graddy found that stormy weather shifted the supply curve. So we can identify the demand curve using that information. In other words, stormy weather serves as an ‘instrumental variable.
+
+Thus, we will plot price against stormy variable (stormy weather, that is if the weather was stormy or not on fishing day). We ‘jitter’ the stormy variable, that is add some random noise to help distinguishing different observations. We also ask for type = p for points and = r for regression line:
+
+xyplot(LogPrice ~ jitter(Stormy), data = Fish, type = c("p","r"), main = "Fish Market Data", sub = "Price versus Stormy Weather")
+
+![Fish Market Data Scatterplot 2](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
+
+
+
 
 
 

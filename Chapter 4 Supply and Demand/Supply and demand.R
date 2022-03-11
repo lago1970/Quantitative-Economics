@@ -109,8 +109,13 @@ pD(q.equil_1)
 
 Fish <- read.csv2("/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 3 Getting data into R/Raw data/fulton.zip Folder/Fulton.csv")
 
+# Plotting the fish data Price x Quantity
 xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
        col = "red", xlab = "Quantity", ylab = "Price")
+
+
+# Plotting the fish data Price x Stormy Weather
+xyplot(LogPrice ~ jitter(Stormy), data = Fish, type = c("p","r"), main = "Fish Market Data", sub = "Price versus Stormy Weather")
 
 
 
