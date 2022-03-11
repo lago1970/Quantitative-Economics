@@ -103,3 +103,15 @@ q.equil_1
 pD(q.equil_1)
 
 
+# A little bit of practice
+
+# Loading fish data
+
+Fish <- read.csv2("/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 3 Getting data into R/Raw data/fulton.zip Folder/Fulton.csv")
+
+xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
+       col = "red", xlab = "Quantity", ylab = "Price")
+
+
+
+

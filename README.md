@@ -235,3 +235,38 @@ In the same way, to find what price corresponds to the final equilibrium price, 
 
 pD(q.equil_1)  
 [1] 3.75
+
+
+### 6. A little bit of practice
+
+#### 6.1 Fish Data
+
+Kathryn Graddy collected data on price and quantities in the Fulton fish market, a
+large market in New York, and reported the results of her study of the prices paid by individual buyers. We can bring the Fulton fish market dataset into R as follows:
+
+Fish <- read.csv2("/Users/MAC/Documents/AmbienteR/Quantitative-Economics/Chapter 3 Getting data into R/Raw data/fulton.zip Folder/Fulton.csv")
+
+inspecting the dataset
+
+head(Fish)  
+str(Fish)
+
+Notice that both price and quantity variables are linearized. Later, we will deal with this topic.
+
+For now, we plot price against quantity in a scatter plot. In order to plot price
+against quantity we use a function or command that is in the Mosaic package, namely **xyplot**:
+
+xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
+       col = "red", xlab = "Quantity", ylab = "Price")
+
+       
+       
+
+
+
+
+
+
+
+
+
