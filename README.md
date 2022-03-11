@@ -146,7 +146,7 @@ So, when q = 20, pD = 0.625.
 
 We will now plot the first inverse demand function:
 
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "1st Demand Curve", col = "blue", xlab = "Quantity", ylab = "Price")
 
 ![First Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/1stDemandCurve.png)
 
@@ -163,13 +163,13 @@ So, when q = 20, pD2 = 3.75
 
 We will now plot the second inverse demand function:
 
-curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "2nd Demand Curve", col = "red", xlab = "Quantity", ylab = "Price")
+curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "2nd Demand Curve", col = "red", xlab = "Quantity", ylab = "Price")
 
 ![Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/2ndDemandCurve.png)
 
 We can now plot both the demand curves pD and pD2 together:
 
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2, lwd = 1.5, main = "1st and 2nd Demand Curves", col = "blue", xlab = "Quantity", ylab = "Price") curve(pD2, add = TRUE, lwd = 2, col = "red")
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1, lwd = 1.5, main = "1st and 2nd Demand Curves", col = "blue", xlab = "Quantity", ylab = "Price") curve(pD2, add = TRUE, lwd = 2, col = "red")
 
 ![First and Second Demand Curve](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/1stand2ndDemandCurves.png)
 
@@ -182,7 +182,7 @@ pS <- makeFun((aS + (bS * q))/cS~q, aS = 12, bS = 2,
 
 We will now plot the supply function:
 
-curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "Supply Curve",
       col = "violet", xlab = "Quantity", ylab = "Price")
       
@@ -190,7 +190,7 @@ curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 2,
 
 Finally, we can plot both supply and demand curves together:
 
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "Supply and Demand Curves",
       col = "blue", xlab = "Quantity", ylab = "Price")
 curve(pD2, add = TRUE, lwd = 2, col = "red")
@@ -268,7 +268,7 @@ Thus, we will plot price against stormy variable (stormy weather, that is if the
 
 xyplot(LogPrice ~ jitter(Stormy), data = Fish, type = c("p","r"), main = "Fish Market Data", sub = "Price versus Stormy Weather")
 
-![Fish Market Data Scatterplot 2]("https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fisher%20market%20data%20price%20x%20stormy.png")
+![Fish Market Data 2]("https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fisher%20market%20data%20price%20x%20stormy.png")
 
 
 

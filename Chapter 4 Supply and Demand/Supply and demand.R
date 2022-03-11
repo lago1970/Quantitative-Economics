@@ -22,7 +22,7 @@ pD(20)
 
 # Plot the first demand function
 
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "1st Demand Curve",
       col = "blue", xlab = "Quantity", ylab = "Price")
 
@@ -38,13 +38,13 @@ pD2(20)
 
 # Plot the second demand function
 
-curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pD2, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "2nd Demand Curve",
       col = "red", xlab = "Quantity", ylab = "Price")
 
 # Plot both the demand curves pD and pD2 together
 
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "1st and 2nd Demand Curves",
       col = "blue", xlab = "Quantity", ylab = "Price")
 curve(pD2, add = TRUE, lwd = 2, col = "red")
@@ -57,13 +57,13 @@ curve(pD2, add = TRUE, lwd = 2, col = "red")
 pS <- makeFun((aS + (bS * q))/cS~q, aS = 12, bS = 2,
               cS = 5)
 
-curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pS, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "Supply Curve",
       col = "violet", xlab = "Quantity", ylab = "Price")
 
 
 # Plot the demand and supply curves together
-curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 2,
+curve(expr = pD, from = 0, to = 30, ylim = c(0, 20), lty = 1,
       lwd = 1.5, main = "Supply and Demand Curves",
       col = "blue", xlab = "Quantity", ylab = "Price")
 curve(pD2, add = TRUE, lwd = 2, col = "red")
