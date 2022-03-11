@@ -259,7 +259,8 @@ against quantity we use a function or command that is in the Mosaic package, nam
 xyplot(LogPrice ~ LogQuantity, data = Fish, main = "Fish Market Data", sub = "Equilibrium price versus equilibrium quantity",
        col = "red", xlab = "Quantity", ylab = "Price")
 
-       
+ ![Fish Market Data Scatterplot](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
+      
        
 
 
