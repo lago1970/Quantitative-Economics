@@ -268,7 +268,7 @@ Thus, we will plot price against stormy variable (stormy weather, that is if the
 
 xyplot(LogPrice ~ jitter(Stormy), data = Fish, type = c("p","r"), main = "Fish Market Data", sub = "Price versus Stormy Weather")
 
-![Fish Market Data Scatterplot 2](https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fish%20market%20data.png)
+![Fish Market Data Scatterplot 2]("https://github.com/lago1970/Quantitative-Economics/blob/main/Chapter%204%20Supply%20and%20Demand/Fisher%20market%20data%20price%20x%20stormy.png")
 
 
 
